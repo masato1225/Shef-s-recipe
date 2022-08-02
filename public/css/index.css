@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ','Meiryo','MSPゴシック',sans-serif;
+}
+
+/************************************プロフィール*******************************************/
+.box {
+    max-width: 1200px;
+    margin: 0 auto ;
+}
+
+.profile {
+    height: 30%;
+    width:100%;
+    margin:30px auto;
+    border-radius: 10px;
+    background-color: #FFE4B5;
+}
+.title {
+    width:30%;
+    font-size: 2.5vw;
+}
+.pro_list {
+    margin: auto;
+}
+.pro_list p{
+    font-size:1.2rem;
+}
+#edit_profile {
+    margin:1.3rem auto;
+    text-align: center;
+    font-size: 1.7rem;
+}
+#edit_profile a {
+    color:#333333;
+    font-weight: bold;
+}
+#edit_profile a:hover {
+    opacity:0.8;
+}
+/************************************レシピ*******************************************/
+.recipe{
+    border-radius: 10px;
+    width:100%;
+}
+#signup {
+    width:65%;
+    margin: 4% auto;
+}
+#signup p {
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+#signup p span {
+    border-bottom: 2px solid red;
+}
+#ques {
+    font-size: 2rem;
+}
+.btn {
+    width:50%;
+    margin: 0 auto;
+}
+.btn input{
+    border: solid 2px #333;
+    padding: 7px 72px;
+    background-color: #FFCC66;
+    font-weight: bold;
+}
+.btn input:hover {
+    opacity: 0.8;
+}
+/************************************ユーザー登録完了*******************************************/
+#usercomp {
+    margin: 100px auto;
+}
+#usercomp p {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+#loginguide {
+    margin: 150px auto;
+}
+#loginguide a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: solid 3px #333;
+    padding: 10px 30px;
+}
+#loginguide a:hover {
+    opacity: 0.7;
+}
+

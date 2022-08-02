@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+
+/**************フォーム*****************/
+label {
+    font-size: 20px;
+	font-weight: bold;
+}
+
+.login_form {
+    width:50vw;
+    margin :50px 0 ;
+}
+/**************プロフィール編集*****************/
+.update_form {
+	width:40vw;
+    margin :50px 0 ;
+}
+input {
+    height:40px;
+}
+
+/**************パスワードリセット*****************/
+.reset_form {
+	width:40vw;
+    margin :50px auto ;
+}
+#reset_form {
+	margin: 25px auto;
+}
+
+/**************レシピ投稿フォーム（タイトル、紹介、費用、時間。目安）*****************/
+#recipe_box {
+	margin-bottom:20px;
+	padding-top:30px;
+	padding-bottom:50px;
+	border-style: dotted; border-color: #DEB887;
+	border-radius: 8px;
+}
+#recipe_form {
+	margin: 10px auto ;
+}
+
+#recipe_form_figure span{
+	font-size:1.5rem;
+	vertical-align:bottom;
+}
+#recipe_form input, #recipe_form textarea, #recipe_form_figure input, #method_form input,  #method_form textarea{
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+label {
+	font-size:1.6rem;
+	border-bottom: solid #FF9933;
+	margin:5px auto;
+}
+/**************レシピ投稿フォーム（材料、手順）*****************/
+ol li {
+	font-size:1.6rem;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+/**デフォルトフォーム**/
+#method{
+	border-style: dotted; border-color: #DEB887;
+	border-radius: 8px;
+}
+#method_form, #add_form {
+	width:70%;
+	margin-left :auto;
+	margin-right :auto;
+}
+#method_form input, #add_form input {
+	margin-bottom: 2%;
+}
+#method_form textarea, #add_form textarea {
+	margin-bottom: 5%;
+}
+#method_form input, #method_form textarea, #add_form input, #add_form textarea{
+	width:100%;
+}
+
+#add, #remove{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px auto;
+	background-color: #DEB887;
+	color: black;
+	border: 1px solid;
+	width:10%;
+	height:50px;
+	border-radius: 5%;
+}
+#add:hover,#remove:hover, #send:hover{
+	opacity: 0.7;
+}
+#send input{
+	width :10%;
+	border: 1px solid;
+	border-radius: 5%;
+	margin: 10px auto;
+	background-color: #ffdead;
+}
+
+/**************レシピ投稿フォーム（確認）*****************/
+#recipe_form p, #recipe_form_figure p{
+	font-size: 1.4rem;
+}
+
+#method_form p {
+	font-size: 1.2rem;
+}
+#conf_form {
+	width:80%;
+	position: relative;
+    margin: 2em auto;
+    padding: 0.5em 1em;
+    border: solid 3px #FFCC66;
+    border-radius: 8px;
+}
+
+#conf_form li {
+	position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 1.5rem;
+    background: #FAEBD7;
+    color: black;
+    font-weight: bold;
+}
+#conf_form p {
+	font-size:1.2rem;
+}
+/**************レシピ詳細*****************/
+#edit_recipe {
+margin-top:2%;
+text-align: center;
+}
+#edit_recipe a{
+  color: black;
+  background-color: #FFFFF0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: solid 0.5px black;
+  width:30%;
+  height:100%;
+  padding-top:10px;
+  cursor: pointer;
+}
+
+#edit:hover, #delete:hover{
+  opacity: 0.7;
+}
+
+/**************投稿レシピ閲覧*****************/
+.paging {
+	text-align: center;
+}
+.paging a {
+	margin: 5px 1%;
+	color:black;
+	font-size: 2rem; 
+	font-weight: bold;
+	text-decoration: none;
+}
+#list_form div {
+	height:100%;
+	padding: 10px;
+}
+#list_form label {
+	font-size:1.5rem;
+}
+#list_form a {
+	color:black;
+	font-size:1.4rem;
+	text-decoration: none;
+}
+
+/**************詳細ページ*******************/
+#image_form {
+	width:80%;
+	margin: auto;
+	text-align: center;
+}
+#image_form img{
+	width:80%;
+}
+/**************いいねボタン*****************/
+#button_form  {
+	margin: 10px auto;
+	width:60%;
+	height:30%;
+}
+.favorite_count {
+	width:50%;
+	margin: auto;
+}
+.favorite_btn {
+	width:100%;
+	color: #fff;
+  	background: #eb6100;
+	border-radius: 5px;
+	border:none;
+	font-weight: bold;
+}
+.favorite_btn :hover {
+	color: #fff;
+  	background: #f56500;
+}
