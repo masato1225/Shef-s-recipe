@@ -26,7 +26,7 @@ if ($count > 0) {
             <p class = "title d-flex justify-content-center" style = "font-weight:bold; color:#CD853F; text-stroke: 1px #333333;">マイプロフィール</p>
             <div class = "pro_list d-flex justify-content-center mt-4">
                 <div style = "width:40%;" class = "mx-5">
-                    <p>ユーザー名：<?php echo $_SESSION["login_user"]["name"]?></p>
+                    <p>ユーザー名はテストです：<?php echo $_SESSION["login_user"]["name"]?></p>
                     <p>働いているお店：<?php echo  $_SESSION["login_user"]["restaurant"]?></p>
                     <p>投稿したレシピ数：<?php echo $count?></p>
                 </div>
