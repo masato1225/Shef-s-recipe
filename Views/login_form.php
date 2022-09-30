@@ -21,7 +21,7 @@ session_destroy();
     <?php include("header.php")?>
     <div class = "box d-flex justify-content-center">
         <div class = "login_form">
-            <h2 class = "d-flex justify-content-center">ログイン</h2>
+            <h2 class = "d-flex justify-content-center">ログインフォーーーーー〜む</h2>
             <form action="login.php" method = "POST">
                 <div class = "login_form">
                     <span style="color:red;"><?php
